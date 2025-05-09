@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruvox - Democratizando o acesso a ferramentas no mercado.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+  
+.carousel-wrapper {
+  height: 80px; /* define uma altura fixa menor */
+  margin: 0;
+  margin-top: -50px;
+}
+
+.testimonial {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+.why-choose {
+  max-width: 1165px;
+}
+
+#garantia {
+  background-color: #000000;
+  padding: 0px 20px;
+  padding-bottom: 60px;
+  padding-top: 10px;
+  width: 100%;
+  margin-top: -70px;
+}
+
+#garantia h2 {
+  margin-bottom: -50px;
+  background-color: #000000;
+}
+
+.guarantee {
+  max-width: 1165px;
+  margin: 0 auto;
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.faq {
+  margin-top: -120px;
+}
+
+.faq h2 {
+  margin-bottom: -50px;
+}
+
+.faq-item {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden; /* Previne rolagem horizontal */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header, section, footer {
+  padding: 60px 0px;
+  margin: auto;
+}
+
+.hero {
+  background: linear-gradient(to bottom,#141416,#000000);
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 0;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #FF8C00, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #ccc;
+  margin-bottom: 10px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #FF8C00;
+  color: #000;
+  padding: 15px 30px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #FF8C00, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 60px 20px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.feature {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+.faq-item, .testimonial, .guarantee {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.depoimentos {
+  background-color: #000000; 
+  margin-top: -160px; 
+  padding-top: 10px;
+}
+
+.depoimentos h2 {
+  margin-bottom: -50px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel.auto-scroll {
+  display: flex;
+  gap: 10px;
+  animation: scroll-left 40s linear infinite;
+  width: max-content;
+}
+
+.carousel.auto-scroll2 {
+  display: flex;
+  gap: 10px;
+  animation: scroll-right 40s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.carousel img {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #0000;
+  padding: 0px; 
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0e0e0e;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222;
+  z-index: 1000;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ferramentas {
+  margin-bottom: 90px;
+  height: 360px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #FF8C00, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  border-radius: 8px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu a {
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ffd700;
+}
+
+.btn-top {
+  background-color: #FF8C00;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.why-choose {
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.why-choose h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #FF8C00, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* espaço reduzido entre os cards */
+}
+
+.feature {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 18px;
+  width: 270px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff; /* mantido branco */
+}
+
+.feature p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.contact-support {
+  background: #000000;
+  padding: 60px 20px;
+}
+
+.contact-container {
+  max-width: 1165px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 32px;
+  background: linear-gradient(90deg, #FF8C00, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.contact-subtitle {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-button:hover {
+  background: #1f1f1f;
+  border-color: rgba(255,215,0,0.3);
+  transform: translateY(-2px);
+}
+
+.whatsapp { color: #25D366; }
+.email { color: #ffd700; }
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.site-footer {
+  background: #0e0e0e;
+  border-top: 1px solid #222;
+  padding: 60px 20px;
+  margin-top: auto;
+  margin-bottom: -180px;
+}
+
+.footer-container {
+  max-width: 1165px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo e slogan */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.logo-area:hover {
+  transform: scale(1.02);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #FF8C00, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.footer-slogan {
+  color: #888;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 400px;
+  font-weight: 400;
+}
+
+/* Direitos */
+.footer-rights p {
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Menu mobile */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* RESPONSIVIDADE PARA MOBILE */
+@media (max-width: 768px) {
+  /* Menu mobile */
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    padding: 20px;
+    border-bottom: 1px solid #222;
+    z-index: 999;
+  }
+  
+  .menu.active {
+    display: flex;
+  }
+  
+  .menu a {
+    padding: 15px 0;
+    border-bottom: 1px solid #222;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .menu a:last-child {
+    border-bottom: none;
+  }
+  
+  /* Hero section */
+  .hero h1 {
+    font-size: 32px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* Ferramentas section */
+  .ferramentas {
+    height: auto;
+    min-height: 300px;
+  }
+  
+  .carousel-wrapper {
+    height: 60px;
+  }
+  
+  .carousel img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Testimonials */
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .testimonial-content {
+    text-align: center;
+  }
+  
+  /* Features */
+  .feature {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-rights p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 15px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .hero p {
+    font-size: 14px;
+  }
+  
+  .section-title {
+    font-size: 26px;
+    padding: 40px 10px;
+  }
+  
+  .carousel-wrapper {
+    height: 50px;
+  }
+  
+  .carousel img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature {
+    padding: 15px;
+  }
+  
+  .feature h3 {
+    font-size: 16px;
+  }
+  
+  .feature p {
+    font-size: 14px;
+  }
+  
+  .contact-title {
+    font-size: 26px;
+  }
+  
+  .contact-button {
+    font-size: 14px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho fixo -->
+  <div class="top-bar">
+    <div class="logo-area">
+      <div class="logo">Ruvox</div>
+    </div>
+    <button class="mobile-menu-btn" id="menuToggle">☰</button>
+    <nav class="menu" id="mobileMenu">
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#garantia">Garantia</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://pay.kirvano.com/897741ba-dfc9-4d26-b48c-97c8b6efd7ee?aff=981d24e2-6d52-403f-9888-d4be9ab8f2d0" class="btn-top">Assinar agora</a>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <h1>Cansado de pagar caro?</h1>
+    <p>Por apenas R$59,90, você desbloqueia o acesso a ferramentas e recursos que muitos pagam R$4.000 para ter.
+Não é exagero — grandes agências e profissionais gastam fortunas para ter acesso ao que você pode conquistar hoje por um valor simbólico.</p>
+    <a href="https://pay.kirvano.com/897741ba-dfc9-4d26-b48c-97c8b6efd7ee?aff=981d24e2-6d52-403f-9888-d4be9ab8f2d0" class="btn">Quero assinar agora</a>
+  </header>
+
+  <section id="ferramentas">
+  <section class="ferramentas">
+
+     <div class="carousel-wrapper">
+    <div class="carousel auto-scroll">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8LmCUqfelw5sdui5-Q4KVcPoiCHQApY6dg&s" alt="Logo 1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRVr9QYTxtd8eXUP34HZLoEnTNMKG1ffIAg&s" alt="Logo 2">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png" alt="Logo 3">
+<img src="https://pbs.twimg.com/profile_images/1779922733582958592/9u3qMlD8_200x200.jpg" alt="Logo 4">
+<img src="https://play-lh.googleusercontent.com/xJTpboo-si-s3vbzZ9j4rbt4YQPLBWZ8cR_B0DADpFMYTjLF6Z3zVuYcS7Jbxn9N1Jk=w240-h480-rw" alt="Logo 5">
+<img src="https://mms.businesswire.com/media/20240410992953/en/2094006/5/Captions_Logo.jpg?download=1" alt="Logo 6">
+<img src="https://images.seeklogo.com/logo-png/33/1/freepik-logo-png_seeklogo-336701.png" alt="Logo 7">
+<img src="https://spyhero.com/wp-content/uploads/2022/12/profile-150x150.png" alt="Logo 8">
+<img src="https://media.licdn.com/dms/image/v2/D4D0BAQE9zhy7ETHd2g/company-logo_200_200/company-logo_200_200/0/1685379556850/filtrify_logo?e=2147483647&v=beta&t=eK0Zr75gvFhcyYijCnGbhY07w0ODS9sO6IIuL10KIEA" alt="Logo 9">
+<img src="https://i0.wp.com/www.kalodata.com/blog/wp-content/uploads/2024/01/20240131-144726.jpeg?fit=800%2C800&ssl=1" alt="Logo 10">
+<img src="https://dcdn-us.mitiendanube.com/stores/002/385/428/products/whatsapp-image-2023-04-18-at-11-31-35-521-031e9de7a24d08f42916954032164290-1024-1024.jpeg" alt="Logo 11">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8LmCUqfelw5sdui5-Q4KVcPoiCHQApY6dg&s" alt="Logo 1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRVr9QYTxtd8eXUP34HZLoEnTNMKG1ffIAg&s" alt="Logo 2">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png" alt="Logo 3">
+<img src="https://pbs.twimg.com/profile_images/1779922733582958592/9u3qMlD8_200x200.jpg" alt="Logo 4">
+<img src="https://play-lh.googleusercontent.com/xJTpboo-si-s3vbzZ9j4rbt4YQPLBWZ8cR_B0DADpFMYTjLF6Z3zVuYcS7Jbxn9N1Jk=w240-h480-rw" alt="Logo 5">
+<img src="https://mms.businesswire.com/media/20240410992953/en/2094006/5/Captions_Logo.jpg?download=1" alt="Logo 6">
+<img src="https://images.seeklogo.com/logo-png/33/1/freepik-logo-png_seeklogo-336701.png" alt="Logo 7">
+<img src="https://spyhero.com/wp-content/uploads/2022/12/profile-150x150.png" alt="Logo 8">
+<img src="https://media.licdn.com/dms/image/v2/D4D0BAQE9zhy7ETHd2g/company-logo_200_200/company-logo_200_200/0/1685379556850/filtrify_logo?e=2147483647&v=beta&t=eK0Zr75gvFhcyYijCnGbhY07w0ODS9sO6IIuL10KIEA" alt="Logo 9">
+<img src="https://i0.wp.com/www.kalodata.com/blog/wp-content/uploads/2024/01/20240131-144726.jpeg?fit=800%2C800&ssl=1" alt="Logo 10">
+<img src="https://dcdn-us.mitiendanube.com/stores/002/385/428/products/whatsapp-image-2023-04-18-at-11-31-35-521-031e9de7a24d08f42916954032164290-1024-1024.jpeg" alt="Logo 11">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8LmCUqfelw5sdui5-Q4KVcPoiCHQApY6dg&s" alt="Logo 1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRVr9QYTxtd8eXUP34HZLoEnTNMKG1ffIAg&s" alt="Logo 2">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png" alt="Logo 3">
+<img src="https://pbs.twimg.com/profile_images/1779922733582958592/9u3qMlD8_200x200.jpg" alt="Logo 4">
+<img src="https://play-lh.googleusercontent.com/xJTpboo-si-s3vbzZ9j4rbt4YQPLBWZ8cR_B0DADpFMYTjLF6Z3zVuYcS7Jbxn9N1Jk=w240-h480-rw" alt="Logo 5">
+<img src="https://mms.businesswire.com/media/20240410992953/en/2094006/5/Captions_Logo.jpg?download=1" alt="Logo 6">
+<img src="https://images.seeklogo.com/logo-png/33/1/freepik-logo-png_seeklogo-336701.png" alt="Logo 7">
+<img src="https://spyhero.com/wp-content/uploads/2022/12/profile-150x150.png" alt="Logo 8">
+<img src="https://media.licdn.com/dms/image/v2/D4D0BAQE9zhy7ETHd2g/company-logo_200_200/company-logo_200_200/0/1685379556850/filtrify_logo?e=2147483647&v=beta&t=eK0Zr75gvFhcyYijCnGbhY07w0ODS9sO6IIuL10KIEA" alt="Logo 9">
+<img src="https://i0.wp.com/www.kalodata.com/blog/wp-content/uploads/2024/01/20240131-144726.jpeg?fit=800%2C800&ssl=1" alt="Logo 10">
+<img src="https://dcdn-us.mitiendanube.com/stores/002/385/428/products/whatsapp-image-2023-04-18-at-11-31-35-521-031e9de7a24d08f42916954032164290-1024-1024.jpeg" alt="Logo 11">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8LmCUqfelw5sdui5-Q4KVcPoiCHQApY6dg&s" alt="Logo 1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRVr9QYTxtd8eXUP34HZLoEnTNMKG1ffIAg&s" alt="Logo 2">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png" alt="Logo 3">
+<img src="https://pbs.twimg.com/profile_images/1779922733582958592/9u3qMlD8_200x200.jpg" alt="Logo 4">
+<img src="https://play-lh.googleusercontent.com/xJTpboo-si-s3vbzZ9j4rbt4YQPLBWZ8cR_B0DADpFMYTjLF6Z3zVuYcS7Jbxn9N1Jk=w240-h480-rw" alt="Logo 5">
+<img src="https://mms.businesswire.com/media/20240410992953/en/2094006/5/Captions_Logo.jpg?download=1" alt="Logo 6">
+<img src="https://images.seeklogo.com/logo-png/33/1/freepik-logo-png_seeklogo-336701.png" alt="Logo 7">
+<img src="https://spyhero.com/wp-content/uploads/2022/12/profile-150x150.png" alt="Logo 8">
+<img src="https://media.licdn.com/dms/image/v2/D4D0BAQE9zhy7ETHd2g/company-logo_200_200/company-logo_200_200/0/1685379556850/filtrify_logo?e=2147483647&v=beta&t=eK0Zr75gvFhcyYijCnGbhY07w0ODS9sO6IIuL10KIEA" alt="Logo 9">
+<img src="https://i0.wp.com/www.kalodata.com/blog/wp-content/uploads/2024/01/20240131-144726.jpeg?fit=800%2C800&ssl=1" alt="Logo 10">
+<img src="https://dcdn-us.mitiendanube.com/stores/002/385/428/products/whatsapp-image-2023-04-18-at-11-31-35-521-031e9de7a24d08f42916954032164290-1024-1024.jpeg" alt="Logo 11">
+    </div>
+  </div>
+  <div style="height: 10px; margin-top: 50px;"></div>
+
+
+       <div class="carousel-wrapper">
+    <div class="carousel auto-scroll2">
+
+       <!-- Logos do carrossel -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_1-aiBoiNuttrEmb8VXC0spuQICOGuDL7Q&s" alt="Logo 12">
+<img src="https://cdn.brandfetch.io/leonardo.ai/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Logo 13">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCEu9SuhDfKATVtN6vZtqlT6NLfDOUGKPpg&s" alt="Logo 14">
+<img src="https://images.seeklogo.com/logo-png/40/1/vecteezy-logo-png_seeklogo-403039.png" alt="Logo 15">
+<img src="https://img.olx.com.br/images/31/311591148054007.jpg" alt="Logo 16">
+<img src="https://comunidadeaordem.com.br/wp-content/uploads/2024/06/IMG-MELHORIA-CONTINUA-ORDEM-11.webp" alt="Logo 17">
+<img src="https://static-media.hotmart.com/3fyrmWUTOGKgPk9o-FqbyiX11e4=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/cf45e8bd-1368-48a2-a5e6-12d6a70f68ac/LogotipoEditave2l.png" alt="Logo 18">
+<img src="https://play-lh.googleusercontent.com/DApBuaqfDq5ViWM-KTv7gWFpImHr9pGRfPE5n-D9xJbvHFV4Q-KdrfrG4VPa8bNlqw" alt="Logo 19">
+<img src="https://pbs.twimg.com/profile_images/1737470726498643968/NMiyWnag_400x400.jpg" alt="Logo 20">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuALgB2AJn_aQ43kcMwQahsy1kB8e1Y-IIMA&s" alt="Logo 21">
+<img src="https://yt3.googleusercontent.com/Y9Z6PONvc07C7DJZxc6yoguU3Ai-enBWyzfDKOU6r2P2cDir7DmtRjUbvV6X5ljSto31JzPtvg=s900-c-k-c0x00ffffff-no-rj" alt="Logo 22">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_1-aiBoiNuttrEmb8VXC0spuQICOGuDL7Q&s" alt="Logo 12">
+<img src="https://cdn.brandfetch.io/leonardo.ai/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Logo 13">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCEu9SuhDfKATVtN6vZtqlT6NLfDOUGKPpg&s" alt="Logo 14">
+<img src="https://images.seeklogo.com/logo-png/40/1/vecteezy-logo-png_seeklogo-403039.png" alt="Logo 15">
+<img src="https://img.olx.com.br/images/31/311591148054007.jpg" alt="Logo 16">
+<img src="https://comunidadeaordem.com.br/wp-content/uploads/2024/06/IMG-MELHORIA-CONTINUA-ORDEM-11.webp" alt="Logo 17">
+<img src="https://static-media.hotmart.com/3fyrmWUTOGKgPk9o-FqbyiX11e4=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/cf45e8bd-1368-48a2-a5e6-12d6a70f68ac/LogotipoEditave2l.png" alt="Logo 18">
+<img src="https://play-lh.googleusercontent.com/DApBuaqfDq5ViWM-KTv7gWFpImHr9pGRfPE5n-D9xJbvHFV4Q-KdrfrG4VPa8bNlqw" alt="Logo 19">
+<img src="https://pbs.twimg.com/profile_images/1737470726498643968/NMiyWnag_400x400.jpg" alt="Logo 20">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuALgB2AJn_aQ43kcMwQahsy1kB8e1Y-IIMA&s" alt="Logo 21">
+<img src="https://yt3.googleusercontent.com/Y9Z6PONvc07C7DJZxc6yoguU3Ai-enBWyzfDKOU6r2P2cDir7DmtRjUbvV6X5ljSto31JzPtvg=s900-c-k-c0x00ffffff-no-rj" alt="Logo 22">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_1-aiBoiNuttrEmb8VXC0spuQICOGuDL7Q&s" alt="Logo 12">
+<img src="https://cdn.brandfetch.io/leonardo.ai/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Logo 13">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCEu9SuhDfKATVtN6vZtqlT6NLfDOUGKPpg&s" alt="Logo 14">
+<img src="https://images.seeklogo.com/logo-png/40/1/vecteezy-logo-png_seeklogo-403039.png" alt="Logo 15">
+<img src="https://img.olx.com.br/images/31/311591148054007.jpg" alt="Logo 16">
+<img src="https://comunidadeaordem.com.br/wp-content/uploads/2024/06/IMG-MELHORIA-CONTINUA-ORDEM-11.webp" alt="Logo 17">
+<img src="https://static-media.hotmart.com/3fyrmWUTOGKgPk9o-FqbyiX11e4=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/cf45e8bd-1368-48a2-a5e6-12d6a70f68ac/LogotipoEditave2l.png" alt="Logo 18">
+<img src="https://play-lh.googleusercontent.com/DApBuaqfDq5ViWM-KTv7gWFpImHr9pGRfPE5n-D9xJbvHFV4Q-KdrfrG4VPa8bNlqw" alt="Logo 19">
+<img src="https://pbs.twimg.com/profile_images/1737470726498643968/NMiyWnag_400x400.jpg" alt="Logo 20">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuALgB2AJn_aQ43kcMwQahsy1kB8e1Y-IIMA&s" alt="Logo 21">
+<img src="https://yt3.googleusercontent.com/Y9Z6PONvc07C7DJZxc6yoguU3Ai-enBWyzfDKOU6r2P2cDir7DmtRjUbvV6X5ljSto31JzPtvg=s900-c-k-c0x00ffffff-no-rj" alt="Logo 22">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_1-aiBoiNuttrEmb8VXC0spuQICOGuDL7Q&s" alt="Logo 12">
+<img src="https://cdn.brandfetch.io/leonardo.ai/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Logo 13">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCEu9SuhDfKATVtN6vZtqlT6NLfDOUGKPpg&s" alt="Logo 14">
+<img src="https://images.seeklogo.com/logo-png/40/1/vecteezy-logo-png_seeklogo-403039.png" alt="Logo 15">
+<img src="https://img.olx.com.br/images/31/311591148054007.jpg" alt="Logo 16">
+<img src="https://comunidadeaordem.com.br/wp-content/uploads/2024/06/IMG-MELHORIA-CONTINUA-ORDEM-11.webp" alt="Logo 17">
+<img src="https://static-media.hotmart.com/3fyrmWUTOGKgPk9o-FqbyiX11e4=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/cf45e8bd-1368-48a2-a5e6-12d6a70f68ac/LogotipoEditave2l.png" alt="Logo 18">
+<img src="https://play-lh.googleusercontent.com/DApBuaqfDq5ViWM-KTv7gWFpImHr9pGRfPE5n-D9xJbvHFV4Q-KdrfrG4VPa8bNlqw" alt="Logo 19">
+<img src="https://pbs.twimg.com/profile_images/1737470726498643968/NMiyWnag_400x400.jpg" alt="Logo 20">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuALgB2AJn_aQ43kcMwQahsy1kB8e1Y-IIMA&s" alt="Logo 21">
+<img src="https://yt3.googleusercontent.com/Y9Z6PONvc07C7DJZxc6yoguU3Ai-enBWyzfDKOU6r2P2cDir7DmtRjUbvV6X5ljSto31JzPtvg=s900-c-k-c0x00ffffff-no-rj" alt="Logo 22">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_1-aiBoiNuttrEmb8VXC0spuQICOGuDL7Q&s" alt="Logo 12">
+<img src="https://cdn.brandfetch.io/leonardo.ai/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Logo 13">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCEu9SuhDfKATVtN6vZtqlT6NLfDOUGKPpg&s" alt="Logo 14">
+<img src="https://images.seeklogo.com/logo-png/40/1/vecteezy-logo-png_seeklogo-403039.png" alt="Logo 15">
+<img src="https://img.olx.com.br/images/31/311591148054007.jpg" alt="Logo 16">
+<img src="https://comunidadeaordem.com.br/wp-content/uploads/2024/06/IMG-MELHORIA-CONTINUA-ORDEM-11.webp" alt="Logo 17">
+<img src="https://static-media.hotmart.com/3fyrmWUTOGKgPk9o-FqbyiX11e4=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/cf45e8bd-1368-48a2-a5e6-12d6a70f68ac/LogotipoEditave2l.png" alt="Logo 18">
+<img src="https://play-lh.googleusercontent.com/DApBuaqfDq5ViWM-KTv7gWFpImHr9pGRfPE5n-D9xJbvHFV4Q-KdrfrG4VPa8bNlqw" alt="Logo 19">
+<img src="https://pbs.twimg.com/profile_images/1737470726498643968/NMiyWnag_400x400.jpg" alt="Logo 20">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuALgB2AJn_aQ43kcMwQahsy1kB8e1Y-IIMA&s" alt="Logo 21">
+<img src="https://yt3.googleusercontent.com/Y9Z6PONvc07C7DJZxc6yoguU3Ai-enBWyzfDKOU6r2P2cDir7DmtRjUbvV6X5ljSto31JzPtvg=s900-c-k-c0x00ffffff-no-rj" alt="Logo 22">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_1-aiBoiNuttrEmb8VXC0spuQICOGuDL7Q&s" alt="Logo 12">
+<img src="https://cdn.brandfetch.io/leonardo.ai/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Logo 13">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCEu9SuhDfKATVtN6vZtqlT6NLfDOUGKPpg&s" alt="Logo 14">
+<img src="https://images.seeklogo.com/logo-png/40/1/vecteezy-logo-png_seeklogo-403039.png" alt="Logo 15">
+<img src="https://img.olx.com.br/images/31/311591148054007.jpg" alt="Logo 16">
+<img src="https://comunidadeaordem.com.br/wp-content/uploads/2024/06/IMG-MELHORIA-CONTINUA-ORDEM-11.webp" alt="Logo 17">
+<img src="https://static-media.hotmart.com/3fyrmWUTOGKgPk9o-FqbyiX11e4=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/cf45e8bd-1368-48a2-a5e6-12d6a70f68ac/LogotipoEditave2l.png" alt="Logo 18">
+<img src="https://play-lh.googleusercontent.com/DApBuaqfDq5ViWM-KTv7gWFpImHr9pGRfPE5n-D9xJbvHFV4Q-KdrfrG4VPa8bNlqw" alt="Logo 19">
+<img src="https://pbs.twimg.com/profile_images/1737470726498643968/NMiyWnag_400x400.jpg" alt="Logo 20">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuALgB2AJn_aQ43kcMwQahsy1kB8e1Y-IIMA&s" alt="Logo 21">
+<img src="https://yt3.googleusercontent.com/Y9Z6PONvc07C7DJZxc6yoguU3Ai-enBWyzfDKOU6r2P2cDir7DmtRjUbvV6X5ljSto31JzPtvg=s900-c-k-c0x00ffffff-no-rj" alt="Logo 22">
+
+
+    </div>
+  </div>
+  <div style="height: 10px; margin-top: 50px;"></div>
+  <div class="carousel-wrapper">
+    <div class="carousel auto-scroll">
+      <!-- Logos do carrossel -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0s_W6qfFi1AFIilvHOcO3chrCuSrq4_SPYg&s" alt="Logo 23">
+<img src="https://cdn-1.webcatalog.io/catalog/finclass/finclass-icon-filled-256.webp?v=1744590759950" alt="Logo 24">
+<img src="https://yt3.googleusercontent.com/Hc8_BtvyNo81X2VPQfJh1vYGXgGVmBfDMgYvAIax50pSgbNozvVN2iu7ZUWwqjq3rypkiJl0Hw=s900-c-k-c0x00ffffff-no-rj" alt="Logo 25">
+<img src="https://images.seeklogo.com/logo-png/61/1/hailuo-icon-logo-png_seeklogo-611637.png" alt="Logo 26">
+<img src="https://clicopy.com/wp-content/uploads/2023/10/imagem.png" alt="Logo 27">
+<img src="https://blog.copygenerator.ai/wp-content/uploads/2023/09/cropped-cropped-Favicon.png" alt="Logo 28">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTN2NVXP2IF_CVgRCmra5h9ytrmzWoUyOBXg&s" alt="Logo 29">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ3u9AU0nhlfTXJTnwWNgJks69gCNHXMUWCQ&s" alt="Logo 30">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/3bee9dff-4c88-44b8-ac04-84c38c5a609d/Designsemnome10.png" alt="Logo 31">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/a6cc6708-2faf-4ee5-8610-2ce51284ec97/capamentoria.jpg" alt="Logo 32">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0s_W6qfFi1AFIilvHOcO3chrCuSrq4_SPYg&s" alt="Logo 23">
+<img src="https://cdn-1.webcatalog.io/catalog/finclass/finclass-icon-filled-256.webp?v=1744590759950" alt="Logo 24">
+<img src="https://yt3.googleusercontent.com/Hc8_BtvyNo81X2VPQfJh1vYGXgGVmBfDMgYvAIax50pSgbNozvVN2iu7ZUWwqjq3rypkiJl0Hw=s900-c-k-c0x00ffffff-no-rj" alt="Logo 25">
+<img src="https://images.seeklogo.com/logo-png/61/1/hailuo-icon-logo-png_seeklogo-611637.png" alt="Logo 26">
+<img src="https://clicopy.com/wp-content/uploads/2023/10/imagem.png" alt="Logo 27">
+<img src="https://blog.copygenerator.ai/wp-content/uploads/2023/09/cropped-cropped-Favicon.png" alt="Logo 28">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTN2NVXP2IF_CVgRCmra5h9ytrmzWoUyOBXg&s" alt="Logo 29">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ3u9AU0nhlfTXJTnwWNgJks69gCNHXMUWCQ&s" alt="Logo 30">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/3bee9dff-4c88-44b8-ac04-84c38c5a609d/Designsemnome10.png" alt="Logo 31">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/a6cc6708-2faf-4ee5-8610-2ce51284ec97/capamentoria.jpg" alt="Logo 32">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0s_W6qfFi1AFIilvHOcO3chrCuSrq4_SPYg&s" alt="Logo 23">
+<img src="https://cdn-1.webcatalog.io/catalog/finclass/finclass-icon-filled-256.webp?v=1744590759950" alt="Logo 24">
+<img src="https://yt3.googleusercontent.com/Hc8_BtvyNo81X2VPQfJh1vYGXgGVmBfDMgYvAIax50pSgbNozvVN2iu7ZUWwqjq3rypkiJl0Hw=s900-c-k-c0x00ffffff-no-rj" alt="Logo 25">
+<img src="https://images.seeklogo.com/logo-png/61/1/hailuo-icon-logo-png_seeklogo-611637.png" alt="Logo 26">
+<img src="https://clicopy.com/wp-content/uploads/2023/10/imagem.png" alt="Logo 27">
+<img src="https://blog.copygenerator.ai/wp-content/uploads/2023/09/cropped-cropped-Favicon.png" alt="Logo 28">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTN2NVXP2IF_CVgRCmra5h9ytrmzWoUyOBXg&s" alt="Logo 29">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ3u9AU0nhlfTXJTnwWNgJks69gCNHXMUWCQ&s" alt="Logo 30">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/3bee9dff-4c88-44b8-ac04-84c38c5a609d/Designsemnome10.png" alt="Logo 31">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/a6cc6708-2faf-4ee5-8610-2ce51284ec97/capamentoria.jpg" alt="Logo 32">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0s_W6qfFi1AFIilvHOcO3chrCuSrq4_SPYg&s" alt="Logo 23">
+<img src="https://cdn-1.webcatalog.io/catalog/finclass/finclass-icon-filled-256.webp?v=1744590759950" alt="Logo 24">
+<img src="https://yt3.googleusercontent.com/Hc8_BtvyNo81X2VPQfJh1vYGXgGVmBfDMgYvAIax50pSgbNozvVN2iu7ZUWwqjq3rypkiJl0Hw=s900-c-k-c0x00ffffff-no-rj" alt="Logo 25">
+<img src="https://images.seeklogo.com/logo-png/61/1/hailuo-icon-logo-png_seeklogo-611637.png" alt="Logo 26">
+<img src="https://clicopy.com/wp-content/uploads/2023/10/imagem.png" alt="Logo 27">
+<img src="https://blog.copygenerator.ai/wp-content/uploads/2023/09/cropped-cropped-Favicon.png" alt="Logo 28">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTN2NVXP2IF_CVgRCmra5h9ytrmzWoUyOBXg&s" alt="Logo 29">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ3u9AU0nhlfTXJTnwWNgJks69gCNHXMUWCQ&s" alt="Logo 30">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/3bee9dff-4c88-44b8-ac04-84c38c5a609d/Designsemnome10.png" alt="Logo 31">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/a6cc6708-2faf-4ee5-8610-2ce51284ec97/capamentoria.jpg" alt="Logo 32">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0s_W6qfFi1AFIilvHOcO3chrCuSrq4_SPYg&s" alt="Logo 23">
+<img src="https://cdn-1.webcatalog.io/catalog/finclass/finclass-icon-filled-256.webp?v=1744590759950" alt="Logo 24">
+<img src="https://yt3.googleusercontent.com/Hc8_BtvyNo81X2VPQfJh1vYGXgGVmBfDMgYvAIax50pSgbNozvVN2iu7ZUWwqjq3rypkiJl0Hw=s900-c-k-c0x00ffffff-no-rj" alt="Logo 25">
+<img src="https://images.seeklogo.com/logo-png/61/1/hailuo-icon-logo-png_seeklogo-611637.png" alt="Logo 26">
+<img src="https://clicopy.com/wp-content/uploads/2023/10/imagem.png" alt="Logo 27">
+<img src="https://blog.copygenerator.ai/wp-content/uploads/2023/09/cropped-cropped-Favicon.png" alt="Logo 28">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTN2NVXP2IF_CVgRCmra5h9ytrmzWoUyOBXg&s" alt="Logo 29">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ3u9AU0nhlfTXJTnwWNgJks69gCNHXMUWCQ&s" alt="Logo 30">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/3bee9dff-4c88-44b8-ac04-84c38c5a609d/Designsemnome10.png" alt="Logo 31">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/a6cc6708-2faf-4ee5-8610-2ce51284ec97/capamentoria.jpg" alt="Logo 32">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0s_W6qfFi1AFIilvHOcO3chrCuSrq4_SPYg&s" alt="Logo 23">
+<img src="https://cdn-1.webcatalog.io/catalog/finclass/finclass-icon-filled-256.webp?v=1744590759950" alt="Logo 24">
+<img src="https://yt3.googleusercontent.com/Hc8_BtvyNo81X2VPQfJh1vYGXgGVmBfDMgYvAIax50pSgbNozvVN2iu7ZUWwqjq3rypkiJl0Hw=s900-c-k-c0x00ffffff-no-rj" alt="Logo 25">
+<img src="https://images.seeklogo.com/logo-png/61/1/hailuo-icon-logo-png_seeklogo-611637.png" alt="Logo 26">
+<img src="https://clicopy.com/wp-content/uploads/2023/10/imagem.png" alt="Logo 27">
+<img src="https://blog.copygenerator.ai/wp-content/uploads/2023/09/cropped-cropped-Favicon.png" alt="Logo 28">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTN2NVXP2IF_CVgRCmra5h9ytrmzWoUyOBXg&s" alt="Logo 29">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ3u9AU0nhlfTXJTnwWNgJks69gCNHXMUWCQ&s" alt="Logo 30">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/3bee9dff-4c88-44b8-ac04-84c38c5a609d/Designsemnome10.png" alt="Logo 31">
+<img src="https://hotmart.s3.amazonaws.com/product_pictures/a6cc6708-2faf-4ee5-8610-2ce51284ec97/capamentoria.jpg" alt="Logo 32">
+    </div>
+  </div>
+  <div style="height: 10px;margin-bottom: -120px;"></div>
+  </section>
+
+
+  <section id="depoimentos">
+  <section class="depoimentos">
+
+    <h2 class="section-title">Depoimentos</h2>
+    <div class="testimonial">
+      <img src="https://i.pinimg.com/originals/25/39/2b/25392bc6f4360af33b187e9b6ce16dd1.jpg" alt="João M.">
+      <div class="testimonial-content">
+        <div class="stars">★★★★★</div>
+                <strong>João M.</strong>
+
+        <p>"Já usei vários e até hoje esse foi o melhor que achei no mercado."</p>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="https://st4.depositphotos.com/20524830/26235/i/1600/depositphotos_262350660-stock-photo-square-landscape-ocean-coastal-cliffs.jpg" alt="Camila R.">
+      <div class="testimonial-content">
+        <div class="stars">★★★★★</div>
+                <strong>Camila R.</strong>
+
+        <p>"Sensacional!"</p>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Eu0hylwCkSUPrXhST_AYXcW-tF_X3Wv04w&s" alt="Marcos P.">
+      <div class="testimonial-content">
+        <div class="stars">★★★★★</div>
+                <strong>Marcos P.</strong>
+
+        <p>"Economizei mais de mil reais com isso. Muito bom!"</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose">
+  <h2>Por que escolher nossas ferramentas?</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Fácil de usar</h3>
+      <p>Interface intuitiva para você economizar tempo e focar no que importa.</p>
+    </div>
+    <div class="feature">
+      <h3>Suporte 24/7</h3>
+      <p>Acesso ao suporte de nossa equipe no Whatsapp, 24 horas por dia e 7 dias por semana.</p>
+    </div>
+    <div class="feature">
+      <h3>Atualizações constantes</h3>
+      <p>Estamos sempre melhorando para você estar à frente da concorrência.</p>
+    </div>
+    <div class="feature">
+      <h3>Sistema de multilogin</h3>
+      <p>Acesse tudo por nosso sistema próprio de multilogin.</p>
+    </div>
+    <div class="feature">
+      <h3>Estrutura própria</h3>
+      <p>Toda estrutura é própria nossa, com garantia de estabilidade e qualidade.</p>
+    </div>
+    <div class="feature">
+      <h3>Ganhe mais com menos</h3>
+      <p>Otimize seus investimentos com ferramentas eficientes e acessíveis.</p>
+    </div>
+    <div class="feature">
+      <h3>Acesse tudo em um só lugar</h3>
+      <p>Acesse todas ferramentas e IAS nossas em uma única plataforma com apenas um clique.</p>
+    </div>
+    <div class="feature">
+      <h3>Melhor custo benefício do mercado</h3>
+      <p>Somos, atualmente, um dos únicos e com melhor custo benefício do mercado.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="garantia">
+    <h2 class="section-title">Garantia de 7 Dias</h2>
+    <div class="guarantee">
+            <strong>Você está seguro, fique tranquilo!</strong>
+      <p>Você tem 7 dias para testar as ferramentas com total segurança. Se não gostar, devolvemos 100% do seu dinheiro. Sem burocracia.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+      <section class="faq">
+
+    <h2 class="section-title">Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <strong>Como funciona acesso?</strong>
+      <p>Após a confirmação do pagamento, o acesso será enviado no whatsapp cadastrado na compra. O acesso é ilimitado 24h com suporte ativo todos os dias até 30 dias após a compra (assinatura mensal).</p>
+    </div>
+    <div class="faq-item">
+      <strong>Quais as formas de pagamento?</strong>
+      <p>As formas de pagamento são: PIX, cartão e boleto.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Por onde é o acesso?</strong>
+      <p>Todas as ferramentas são acessadas em nosso sistema próprio de multilogin.</p>
+    </div>
+  </section>
+  
+
+<section class="contact-support">
+  <div class="contact-container">
+    <h2 class="contact-title">Suporte Direto</h2>
+    <p class="contact-subtitle">Canais prioritários para seu atendimento</p>
+    
+    <div class="contact-methods">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/553183571172" class="contact-button whatsapp" target="_blank">
+        <svg class="contact-icon" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"/>
+        </svg>
+        WhatsApp: +55 31 8357-1172
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:contato@ruvox.com" class="contact-button email">
+        <svg class="contact-icon" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/>
+        </svg>
+        contato@ruvox.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Logo e slogan -->
+    <div class="footer-brand">
+      <div class="logo-wrapper">
+        <div class="logo-area">
+          <span class="logo">Ruvox</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direitos reservados -->
+    <div class="footer-rights">
+      <p>© 2024 Ruvox. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Menu mobile toggle
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    menuToggle.addEventListener('click', function() {
+      mobileMenu.classList.toggle('active');
+    });
+    
+    // Fechar menu ao clicar em um link
+    const menuLinks = document.querySelectorAll('.menu a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.remove('active');
+      });
+    });
+  });
+</script>
+</body>
+</html>
